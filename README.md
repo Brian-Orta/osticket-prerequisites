@@ -154,8 +154,7 @@ _We're going to have to create a directory for the next installation:_
 <img src="https://i.imgur.com/RjawCDK.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 
-- On the left sidebar, click the dropdown arrow beside "Sites", same thing with "Default Web Site", then click "osTicket.
-  - _The icons in the center window should change._
+- On the left sidebar, click the dropdown arrow beside "Sites", same thing with "Default Web Site", then click "osTicket".
 - On the right sidebar, click "Browse *:80 (http)".
   - This will open a new tab on Microsoft Edge to the osTicket Installer page.
 <p align="center">
@@ -164,6 +163,7 @@ _We're going to have to create a directory for the next installation:_
 </p>
 
 _Note that some of the recommended extensions are not enabled, so this will need to be addressed:_
+
 - Return to IIS, still under osTicket folder on the left sidebar, double-click "PHP Manager".
 - Under PHP Extensions, click "Enable or disable an extension".
 <p align="center">
@@ -176,14 +176,14 @@ _Note that some of the recommended extensions are not enabled, so this will need
   - php_intl.dll
   - php_opcache.dll
 - Refresh the osTicket webpage to observe the changes.
-  - _APCu Extension & Zend OPcache Extension should be the only two with a Red X._
+  - APCu Extension & Zend OPcache Extension should be the only two with a Red X.
 <p align="center">
 <img src="https://i.imgur.com/lJLsKOa.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 
 - Return to the wwwroot folder in File Explorer.
-  - Navagate to **...wwwroot\osTicket\include**.
-  - Find `ost-sampleconfig.php`, and Rename it to `ost-config.php` (essentially removing the word sample).
+  - Navagate to "**...wwwroot\osTicket\include**".
+  - Find "ost-sampleconfig.php", and Rename it to "ost-config.php".
 <p align="center">
 <img src="https://i.imgur.com/N3FLLaY.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
@@ -198,37 +198,36 @@ _For demonstration purposes, we are going to temporarily give every user the per
 
 - Next, click "Disable inheritance".
 - When the prompt appears, click "Remove all inherited permissions from this object".
-  - _The middle box should no longer have any principals, so we'll need to add one that includes everyone._
+  - The middle box should no longer have any principals, so we'll need to add one that includes everyone.
 - Click "Add".
 <p align="center">
 <img src="https://i.imgur.com/8RaZ9Sn.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 - At the top, click "Select a principal".
-- In the object name box, type in "everyone", then click "Check Names" (it should automatically assign it to **Everyone**).
+- In the object name box, type in "everyone", then click "Check Names" (it should automatically assign it to "**Everyone**").
 - Press "OK", then click the checkmark to enable "Full Control".
 - Press "OK" until all properties windows are closed.
 <p align="center">
 <img src="https://i.imgur.com/8WWGxGN.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
-_Now we can continue setting up the osTicket installation._
-- Install <a href="https://www.heidisql.com/installers/HeidiSQL_12.3.0.6589_Setup.exe">HeidiSQL v12.3.0.6589</a> (Heidi SQL).
-  - Accept the agreement, then keep clicking "Next", then "Install".
-  - Once done, click Finish to launch the program.
+- Install "HeidiSQL v12.3.0.6589" (Heidi SQL).
+  - click Accept the agreement, then keep clicking "Next", then click "Install".
+  - Once done, click "Finish" to launch the program.
 <p align="center">
 <img src="https://i.imgur.com/8Ya2O7l.jpg" height="150%" width="150%" alt="Disk Sanitization Steps"/>
 </p>
 
-- In HeidiSQL, click "New" at the bottom left.
-- Enter the username **"root"**, and the password you created when installing MySQL.
+- In "HeidiSQL", click "New" at the bottom left.
+- Enter the username "**"root"**", and the password you created when installing MySQL.
 - Click "Open".
 <p align="center">
 <img src="https://i.imgur.com/MRTC33j.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 - Right-click "Unnamed" on the left sidebar.
-  - Select "Created new" > "Database".
+  - Select "Created new" -> "Database".
 - Type in the name "osTicket", then click "OK".
 <p align="center">
 <img src="https://i.imgur.com/ULeJErY.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
@@ -236,20 +235,14 @@ _Now we can continue setting up the osTicket installation._
 
 - Return the osTicket Installation webpage, click "Continue".
 - Under System Settings section:
-  - Create a Helpdesk Name of your choice (this example uses **OST Help Desk**).
-  - Create a Default Email of your choice (this example uses **ost@helper.com**).
-- Under Admin User section, create the appropriate credentials of your choice (example below):
-  - **First Name:** ost
-  - **Last Name:** user
-  - **Email Address:** ostuser@email.com
-  - **Username:** ostuser
-  - **Password:** Password1
+  - Create a Helpdesk Name of your choice.
+  - Create a Default Email of your choice.
+- Under Admin User section, create the appropriate credentials of your choice.
 - Under Database Settings section:
   - Enter MySQL Database name that was created in HeidiSLQ (**osTicket**).
-  - Enter MySQL Username (default is **root**).
+  - Enter MySQL Username (**root**).
   - Enter MySQL Password (Password you created when installing MySQL).
 - Once completed, click "Install Now".
-  - _You should then be sent to a Congratulations! page, if no errors._
 <p align="center">
 <img src="https://i.imgur.com/1GQbv9n.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/sfmeeK5.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
