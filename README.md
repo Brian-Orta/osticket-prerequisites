@@ -33,10 +33,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Create a "Virtual Machine" running Windows OS.
 - Connect to that VM using Remote Desktop Connection (RDP).
 
-_If you don't know how to complete this prerequisite, refer to <a href="https://github.com/brian-orta/azure-start#readme">THIS PAGE</a>_
+_If you don't know how to complete this prerequisite, refer <a href="https://github.com/brian-orta/azure-start#readme">HERE</a>_
 <hr>
 
-<h3>&#9313; Enabling Windows Features in the Virtual Machine</h3>
+<h3>Enabling Windows Features in the Virtual Machine</h3>
 
 - Before installing any file, on the virtual machine:
   - Press the Windows Key/Button, then search for "Turn Windows Features on or off /Control Panel".
@@ -44,18 +44,17 @@ _If you don't know how to complete this prerequisite, refer to <a href="https://
 <img src="https://i.imgur.com/8NCudlF.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Find "Internet Information Services", then click the checkbox ☐ to enable it (should now have a small black box in the middle, NOT a checkmark).
+- Find "Internet Information Services", then click the checkbox ☐ to enable it.
   - Then, expand the folder by clicking the [+] button next to it.
 - Expand "Application Development Features", then checkmark "CGI".
 - Expand "Common HTTP Features", then checkmark ALL boxes.
 - Click "OK" to apply changes.
 <p align="center">
 <img src="https://i.imgur.com/vTX7c7x.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/FYHztm2.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
-_With those changes applied, we'll need to confirm if they are working._
-- Open Microsoft Edge browser (or any other browser).
+- With those changes applied, we'll need to confirm if they are working._
+  - Open Microsoft Edge browser (or any other browser).
 - On the address bar, type in "127.0.0.1", then ENTER.
 
 _This should take you to the "Internet Information Services" page, which confirms the features are working._
@@ -64,15 +63,9 @@ _This should take you to the "Internet Information Services" page, which confirm
 </p>
 <hr>
 
-<h3>&#9314; Installing osTicket: Support Ticketing System</h3>
+<h3>Installing osTicket: Support Ticketing System</h3>
 
-_We'll now need to install the prerequisites files onto the virtual machine in order for osTicket to run correctly._ </br>
-_You can download all of the necessary files <a href="https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">HERE</a>_, or download them individually while following this demo.</br>
-_(Download from the Virtual Machine!)</br>_
-_You can right-click the .zip file, click "Extract All...", then "Extract"._
-<p align="center">
-<img src="https://i.imgur.com/z2pjEZI.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+- We'll now need to install the prerequisites files onto the virtual machine in order for osTicket to run correctly.</br>
 
 - On the virtual machine, first install <a href="https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view">PHPManagerForIIS_V1.5.0.msi</a> (PHP Manager for IIS).
 - When the installation prompt appears, click "Next" > Select "I Agree" and "Next" > After installation, "Close".
