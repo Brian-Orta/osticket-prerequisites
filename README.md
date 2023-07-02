@@ -226,17 +226,14 @@ _For demonstration purposes, we are going to temporarily give every user the per
 <img src="https://i.imgur.com/MRTC33j.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Right-click "Unnamed" on the left sidebar.
-  - Select "Created new" -> "Database".
+- Right-click "Unnamed", Select "Created new" -> "Database".
 - Type in the name "osTicket", then click "OK".
 <p align="center">
 <img src="https://i.imgur.com/ULeJErY.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 - Return the osTicket Installation webpage, click "Continue".
-- Under System Settings section:
-  - Create a Helpdesk Name of your choice.
-  - Create a Default Email of your choice.
+- Under System Settings section, create the appropriate credentials of your choice.
 - Under Admin User section, create the appropriate credentials of your choice.
 - Under Database Settings section:
   - Enter MySQL Database name that was created in HeidiSLQ (**osTicket**).
@@ -244,40 +241,16 @@ _For demonstration purposes, we are going to temporarily give every user the per
   - Enter MySQL Password (Password you created when installing MySQL).
 - Once completed, click "Install Now".
 <p align="center">
-<img src="https://i.imgur.com/1GQbv9n.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/sfmeeK5.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <hr>
 
-<h3>&#9317; Clean Up</h3>
 
-- Return to File Explorer and navigate to "C:\inetpub\wwwroot\osTicket\".
-- Find and Delete the `setup` folder.
-<p align="center">
-<img src="https://i.imgur.com/6oY0tWK.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
-</p>
+<h2 align="center">
+🎇CONGRATULATIONS!🎇
+  <br>
+</h2>
 
-_Now we need to reset the permissions of the `ost-config.php` file to read-only to prevent any accidental edits._
-- Navigate to "C:\inetpub\wwwroot\osTicket\include".
-  - Right-click on `ost-config.php` file, then select "Properties".
-  - Select "Security" tab, click "Advanced".
-  - Select "Everyone" principal in the center box, then click "Edit".
-  - Uncheck "Full Control", "Modify", and "Write".
-  - Press "OK", "Apply", then "OK" to close the window.
-<p align="center">
-<img src="https://i.imgur.com/BIdXCox.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/bQsRfR0.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-</p>
-<hr>
-
-<h3>&#9318; Testing The Login Services</h3>
-Help Desk Login Page: <a href="http://localhost/osTicket/scp/login.php">http://localhost/osTicket/scp/login.php</a></br>
-End User Ticket Page: <a href="http://localhost/osTicket/">http://localhost/osTicket/</a>
-
-- Copy the URLs and open them in Microsoft Edge.
-<p align="center">
-<img src="https://i.imgur.com/mQYjqoF.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-</p>
-<hr>
-
-<h1><p align=center>COMPLETE!</p></h1>
+<h2 align="center">
+🛑REMEMBER TO DELETE YOUR RESOURCES ONCE YOU ARE DONE WITH THE LAB🛑
+</h2>
