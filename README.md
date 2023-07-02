@@ -65,47 +65,45 @@ _This should take you to the "Internet Information Services" page, which confirm
 
 <h3>Installing osTicket: Support Ticketing System</h3>
 
-- We'll now need to install the prerequisites files onto the virtual machine in order for osTicket to run correctly.</br>
-
-- On the virtual machine, first install <a href="https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view">PHPManagerForIIS_V1.5.0.msi</a> (PHP Manager for IIS).
-- When the installation prompt appears, click "Next" > Select "I Agree" and "Next" > After installation, "Close".
+- We'll now need to install the prerequisites files onto the virtual machine in order for osTicket to run correctly.
+- On the virtual machine, first install "PHPManagerForIIS_V1.5.0.msi" (PHP Manager for IIS).
+- When the installation prompt appears, click "Next" -> Select "I Agree" and click "Next" -> After installation, click "Close".
 <p align="center">
 <img src="https://i.imgur.com/nUge8wP.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Next, install <a href="https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view">rewrite_amd64_en-US.msi</a> (Rewrite Module)
-- When the installation prompt appears, click the checkbox to Agree the terms > click "Install" > After installation, "Finish".
+- Next, install "rewrite_amd64_en-US.msi (Rewrite Module)
+- When the installation prompt appears, click the checkbox to Agree the terms then click "Install" -> After installation, click "Finish".
 <p align="center">
 <img src="https://i.imgur.com/xrSD9NW.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 _We're going to have to create a directory for the next installation:_
-- Open the `C:\` drive in "Windows Explorer".
-- Right-click on an empty space and select to "New" > "Folder" to create a blank folder.
+
+- Open the `C:\` drive in "File Explorer".
+- Right-click on an empty space and select "New" -> "Folder" to create a blank folder.
 - Rename the folder to "PHP".
-  - _You can right-click the new folder and select "Rename", or slowly double-click it to allow renaming_
+  - You can right-click the new folder and select "Rename".
 <p align="center">
 <img src="https://i.imgur.com/5yEsn7Z.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Download <a href="https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view">php-7.3.8-nts-Win32-VC15-x86.zip</a> (PHP)
-  - _You'll notice that the file is contained in a .zip file, so we'll have to extract the contents from it before using._
-- Right-click on the .zip file > click "Extract All..." > "Browse" > Find and select the PHP folder in C:\ > "Extract".
-  - _Or you can simply type it in the box if you already know the path name._
+- Download "php-7.3.8-nts-Win32-VC15-x86.zip" (PHP)
+- Right-click on the .zip file -> click "Extract All..." -> click "Browse" -> Find and select the PHP folder in C:\ -> click "Extract".
 <p align="center">
 <img src="https://i.imgur.com/ZfLqf3M.jpg" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/6SEcPHm.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Install <a href="https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view">VC_redist.x86.exe</a> (Microsoft Visual C++ Redistributable).
-- Agree to the License Terms and Conditions, the click "Install".
+- Install VC_redist.x86.exe (Microsoft Visual C++ Redistributable).
+- click "Agree to the License Terms and Conditions", then click "Install".
 - Once completed, click "Close".
 <p align="center">
 <img src="https://i.imgur.com/M6bnRpe.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Next, install <a href="https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view">mysql-5.5.62-win32.msi</a> (MySQL v5.5.62).
-- Agree to the License Agreement, then click "Next".
+- Next, install mysql-5.5.62-win32.msi (MySQL v5.5.62).
+- click "Agree to the License Agreement", then click "Next".
 - Click "Typical".
 - Once that's complete, click "Finish".
 <p align="center">
@@ -113,7 +111,7 @@ _We're going to have to create a directory for the next installation:_
 </p>
 
 - Another window prompt will appear, just click "Next".
-- Click "Standard Configuration", then "Next" twice (leaving everything by default).
+- Click "Standard Configuration", then click "Next" twice (leaving everything by default).
 - Create a password of your choice for the root login, then click "Next".
 - Click "Execute" to start the configuration process.
 - Once completed, click "Finish".
@@ -124,7 +122,7 @@ _We're going to have to create a directory for the next installation:_
 </p>
 <hr>
 
-<h3>&#9315; Register PHP within IIS</h3>
+<h3>Register PHP within IIS</h3>
 
 - Press the Windows Key/Button and search for "Internet Information Services (IIS) Manager", then "Run as Administrator".
 - Double-click "PHP Manager".
