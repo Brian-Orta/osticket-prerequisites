@@ -80,7 +80,7 @@ _This should take you to the "Internet Information Services" page, which confirm
 
 _We're going to have to create a directory for the next installation:_
 
-- Open the `C:\` drive in "File Explorer".
+- Open the "C:\" drive in "File Explorer".
 - Right-click on an empty space and select "New" -> "Folder" to create a blank folder.
 - Rename the folder to "PHP".
   - You can right-click the new folder and select "Rename".
@@ -124,11 +124,11 @@ _We're going to have to create a directory for the next installation:_
 
 <h3>Register PHP within IIS</h3>
 
-- Press the Windows Key/Button and search for "Internet Information Services (IIS) Manager", then "Run as Administrator".
+- Press the "Windows Key" and search for "Internet Information Services (IIS) Manager", then right-click and select "Run as Administrator".
 - Double-click "PHP Manager".
 - Under PHP Setup, click on "Register new PHP version".
-- Click on the 3-dots "..." to browse for `php-cgi.exe`, located inside the PHP folder on the C:\ drive.
-- Once you find it, click "Open" (or double-click the file), then "OK".
+- Click on the 3-dots "..." to browse for "php-cgi.exe", located inside the PHP folder on the "C:\" drive.
+- Once you find it, click "Open" (or double-click the file), then click "OK".
 <p align="center">
 <img src="https://i.imgur.com/ZUbY9fi.jpg" height="20%" width="20%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/5vkhmRw.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
@@ -136,14 +136,13 @@ _We're going to have to create a directory for the next installation:_
 </p>
 <hr>
 
-<h3>&#9316; Installing osTicket: Support Ticketing System</h3>
+<h3>Installing osTicket: Support Ticketing System</h3>
 
-_Now we are ready to install osTicket!_
-- Download <a href="https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">osTicket-v1.15.8.zip</a> (osTicket).
+- Download "osTicket-v1.15.8.zip" (osTicket).
   - Open the .zip file (no need to extract all).
-- Open another File Explorer window and navigate to **C:\inetpub\wwwroot**.
-- Click and Drag the `upload` folder in the .zip file into wwwroot folder (this will automatically extract that specific folder).
-- Rename `upload` to `osTicket`.
+- Open another File Explorer window and navigate to "**C:\inetpub\wwwroot**".
+- Click and Drag the "upload" folder in the .zip file into "wwwroot" folder (this will automatically extract that specific folder).
+- Rename "upload" to "osTicket".
 <p align="center">
 <img src="https://i.imgur.com/caVUV5a.jpg" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
